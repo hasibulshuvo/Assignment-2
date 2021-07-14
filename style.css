@@ -1,0 +1,154 @@
+/* font style */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* -----------
+header style 
+---------------*/
+.section{
+    background-color: #2D25A0; 
+    display: flex;
+    padding-bottom: 20px;
+    align-items: center;
+   
+}
+.head{
+    font-size: 64px;
+    color: #FFFFFF;
+    margin-top: 207px;
+    margin-left: 56px;
+    
+
+}
+.header .head:hover{
+    transform: rotate(360deg);
+    transition: transform 2s ease-in-out ;
+}
+.button a{
+   background-color:#E02C6D ;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 5px;
+    margin-left: 56px;
+
+}
+
+ .banner img:hover{
+    transform: scale(1.2);
+    
+    /* transform: matrix(1, -0.3, 0, 1, 0, 0); */
+    transition: transform 2s ease-in-out ;
+    /* transition: width 2s, height 2s; */
+    
+}
+.banner img{
+    width: 500.px;
+    height: 400px;
+    margin-top: 125px;
+    margin-right: 147px;
+}
+
+/* ------------
+players style 
+--------------*/
+.container{
+    padding-top: 85px;
+margin-left: 150px;
+}
+
+.player{
+    padding-left: 10px;
+    padding-top: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15)
+   
+}
+
+.player-bunner img{
+    width: 300px;
+    height: 256px;
+}
+
+.players{
+    width: 320px;
+    height: 500px;
+    padding: 10px;
+     display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-column-gap: 20px;
+} 
+.player-title h2{
+    font-size: 28px;
+   
+}
+.player-title p{
+    color: #6C6C6C;
+    font-size: 16px;
+
+
+    
+}
+
+
+
+
+.middle-head{ 
+    padding-top: 70%;
+   display: flex;
+   align-items: center;
+  
+}
+.mid{
+    font-size: 48px;
+    margin-top: 207px;
+    margin-left: 50px;
+}
+.match-banner img{
+    width: 567px;
+    height: 427px;
+    margin-top: 207px;
+    margin-right: 65px;
+
+}
+.datile{
+    font-size: 16px;
+    color: #6C6C6C;
+    margin-left: 50px;
+}
+
+/* <!-- footer style --> */
+
+footer{
+    text-align: center;
+}
+
+.logo img{
+    padding-top: 100px;
+    width: 483.87px;
+height: 110px;
+}
+.icon img{
+height: 32px;
+width: 32px;
+}
+
+.Copyright{
+    font-size: 18px;
+}
+/* ----------
+mobile responsive
+----------- */
+
+@media only screen  max(690px){
+.section ,.container, .middle-head img{
+    width:100%  
+}
+.header, .player .player-detail{
+    grid-template-columns: repeat(1, 1fr);
+}
+.players{
+    grid-template-columns: repeat(2, 1fr);
+} 
+}
